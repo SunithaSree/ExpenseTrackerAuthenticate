@@ -24,6 +24,7 @@ async function connectToDB() {
     console.log("connection established :)");
     //making port number generic by making server deceide your port
     //specifying 4001 to make it run in local machine
+    //
     const port = process.env.PORT || 4001;
     app.listen(port, function () {
       console.log(`listening on ${port}`);
